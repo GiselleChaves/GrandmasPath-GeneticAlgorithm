@@ -23,17 +23,21 @@ public class GrandmasPath {
         return lines;
     }
 
-    public List<String> shortestPath(String filePath) {
-        int result = 0;
+//    public List<String> shortestPath(String filePath) {
+    public String shortestPath(String filePath) {
 
         List<String> cities = readFile(filePath);
-        for(int i = 1; i < cities.size(); i++) {
-            long x1 =
+        String[] arrayOfWords = new String[0];
+        String x1, y1 = null, city = null;
+        
+        for (int i = 1; i < cities.size(); i++) {
+            String line = cities.get(i);
+            arrayOfWords = line.split(" ");
+            x1 = arrayOfWords[0];
+            y1 = arrayOfWords[1];
+            city = arrayOfWords[2];
+            break;
         }
-
-
-
-
-        return cities;
+        return y1;
     }
 }

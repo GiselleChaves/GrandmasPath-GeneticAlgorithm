@@ -7,12 +7,8 @@ public class Main {
         GrandmasPath grandmasPath = new GrandmasPath();
 
         // Usando o método com BufferedReader
-        List<String> linhasBufferedReader = grandmasPath.shortestPath(filePath);
+        String linhasBufferedReader = (grandmasPath.shortestPath(filePath));
+        System.out.println(linhasBufferedReader);
 
-
-        System.out.println("Conteúdo do arquivo (BufferedReader):");
-        for (String linha : linhasBufferedReader) {
-            System.out.println(linha);
-        }
     }
 }
